@@ -3,12 +3,17 @@
 \section{Критерии сравнения модификаций CNN}
 
 Для сравнения модификаций сверточных нейронных сетей будут использоваться следующие основные критерии~\cite{base, all, yolobase, cmp}:
-\begin{enumerate}
+\begin{enumerate}[leftmargin=1.6\parindent]
 	\item mAP;
 	\item FPS;
 	\item PS.
 \end{enumerate}
 
+Критерий mAP показывает точность модели и вычисляется по формуле~\ref{eq2}.
+\begin{equation}
+	\label{eq2}
+	mAP = 1/N \sum_{i=1}^{N} AP_{i}
+\end{equation}
 , где N~---~ количество классов,
 AP (average precision)~---~популярная метрика для измерения точности детекторов объектов.
 
