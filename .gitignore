@@ -302,3 +302,4 @@ TSWLatexianTemp*
 
 # MacOS files
 .DS_Store
+.idea
