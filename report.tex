@@ -16,10 +16,11 @@
 	{} % ФИО консультанта (необязательный аргумент; если консультантов несколько, их необходимо разделить запятой)
 
 \setcounter{page}{3}
-\cftsetindents{section}{\parindent}{12.5mm}
-\renewcommand{\contentsname}{СОДЕРЖАНИЕ}
-\tableofcontents
 \include{parts/essay}
+\cftsetindents{section}{0mm}{12.5mm}
+\renewcommand{\cftaftertoctitle}{\hfill}
+\renewcommand{\contentsname}{\hfill\LARGE СОДЕРЖАНИЕ\hfill}
+\tableofcontents
 \include{parts/02-def}
 \include{parts/03-abbr}
 \include{parts/04-intro}
